@@ -2,7 +2,16 @@
 
 [![Build Status](https://travis-ci.org/graphql-python/webob-graphql.svg?branch=master)](https://travis-ci.org/graphql-python/webob-graphql) [![Coverage Status](https://coveralls.io/repos/graphql-python/webob-graphql/badge.svg?branch=master&service=github)](https://coveralls.io/github/graphql-python/webob-graphql?branch=master) [![PyPI version](https://badge.fury.io/py/webob-graphql.svg)](https://badge.fury.io/py/webob-graphql)
 
-Adds GraphQL support to your WebOb application.
+Adds GraphQL support to your WebOb (Pyramid, Pylons, ...) application.
+
+## Installation
+
+For instaling WebOb-GraphQL, just run this command in your shell
+
+```bash
+pip install "webob-graphql>=1.0.dev"
+```
+
 
 ## Usage
 
@@ -26,7 +35,7 @@ from webob_graphql import serve_graphql_request
 def graphql_view(request):
     return serve_graphql_request(request, schema)
 
-	# Optional, for adding batch query support (used in Apollo-Client)
+    # Optional, for adding batch query support (used in Apollo-Client)
     return serve_graphql_request(request, schema, batch_enabled=True)
 ```
 

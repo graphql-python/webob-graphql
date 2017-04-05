@@ -3,7 +3,16 @@ WebOb-GraphQL
 
 |Build Status| |Coverage Status| |PyPI version|
 
-Adds GraphQL support to your WebOb application.
+Adds GraphQL support to your WebOb (Pyramid, Pylons, ...) application.
+
+Installation
+------------
+
+For instaling WebOb-GraphQL, just run this command in your shell
+
+.. code:: bash
+
+    pip install "webob-graphql>=1.0.dev"
 
 Usage
 -----
