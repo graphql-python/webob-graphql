@@ -41,6 +41,7 @@ Supported options
    function.
 -  ``root_value``: The ``root_value`` you want to provide to
    ``executor.execute``.
+-  ``format_error``: If you want to use a custom error formatter.
 -  ``pretty``: Whether or not you want the response to be pretty printed
    JSON.
 -  ``executor``: The ``Executor`` that you want to use to execute
@@ -49,8 +50,8 @@ Supported options
    `GraphiQL <https://github.com/graphql/graphiql>`__ when loaded
    directly from a browser (a useful tool for debugging and
    exploration).
--  ``graphiql_template``: Inject a Jinja template string to customize
-   GraphiQL.
+-  ``render_graphiql``: A custom function for rendering GraphiQL (this
+   function should have the arguments ``result`` and ``params``).
 -  ``batch_enabled``: Enable batch support (for using in
    `Apollo-Client <http://dev.apollodata.com/core/network.html#query-batching>`__
    or

@@ -34,8 +34,9 @@ def graphql_view(request):
  * `schema`: The `GraphQLSchema` object that you want the view to execute when it gets a valid request.
  * `context`: A value to pass as the `context` to the `graphql()` function.
  * `root_value`: The `root_value` you want to provide to `executor.execute`.
+ * `format_error`: If you want to use a custom error formatter.
  * `pretty`: Whether or not you want the response to be pretty printed JSON.
  * `executor`: The `Executor` that you want to use to execute queries.
  * `graphiql_enabled`: If `True` (default), may present [GraphiQL](https://github.com/graphql/graphiql) when loaded directly from a browser (a useful tool for debugging and exploration).
- * `graphiql_template`: Inject a Jinja template string to customize GraphiQL.
+ * `render_graphiql`: A custom function for rendering GraphiQL (this function should have the arguments `result` and `params`).
  * `batch_enabled`: Enable batch support (for using in [Apollo-Client](http://dev.apollodata.com/core/network.html#query-batching) or [ReactRelayNetworkLayer](https://github.com/nodkz/react-relay-network-layer))
