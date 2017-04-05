@@ -1,0 +1,3 @@
+include README.md
+recursive-include webob_graphql/static *
+recursive-include webob_graphql/templates *
