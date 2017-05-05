@@ -33,15 +33,16 @@ from webob_graphql import serve_graphql_request
     # In summary, don't use the renderer='json' here :)
 )
 def graphql_view(request):
-    return serve_graphql_request(request, schema)
+    context = {'session': request.session}
+    return serve_graphql_request(request, schema, context_value=context)
 
     # Optional, for adding batch query support (used in Apollo-Client)
-    return serve_graphql_request(request, schema, batch_enabled=True)
+    return serve_graphql_request(request, schema, batch_enabled=True, context_value=context)
 ```
 
 ### Supported options
  * `schema`: The `GraphQLSchema` object that you want the view to execute when it gets a valid request.
- * `context`: A value to pass as the `context` to the `graphql()` function.
+ * `context_value`: A value to pass as the `context` to the `graphql()` function.
  * `root_value`: The `root_value` you want to provide to `executor.execute`.
  * `format_error`: If you want to use a custom error formatter.
  * `pretty`: Whether or not you want the response to be pretty printed JSON.
