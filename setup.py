@@ -1,20 +1,16 @@
 from setuptools import setup, find_packages
 
 required_packages = [
-    'graphql-core>=1.0',
-    'webob',
-    'graphql-server-core>=1.0.dev'
+    'graphql-core>=1.0', 'webob', 'graphql-server-core>=1.0.dev'
 ]
 
-tests_require = [
-    'pytest>=2.7.3',
-    'mako'
-]
+tests_require = ['pytest>=2.7.3', 'mako']
 
 setup(
     name='WebOb-GraphQL',
-    version='1.0.dev20170404001',
-    description='Adds GraphQL support to your WebOb (Pyramid/Pylons/...) application',
+    version='1.0',
+    description=
+    'Adds GraphQL support to your WebOb (Pyramid/Pylons/...) application',
     long_description=open('README.rst').read(),
     url='https://github.com/graphql-python/webob-graphql',
     download_url='https://github.com/graphql-python/webob-graphql/releases',
@@ -43,5 +39,4 @@ setup(
     tests_require=tests_require,
     include_package_data=True,
     zip_safe=False,
-    platforms='any',
-)
+    platforms='any', )
