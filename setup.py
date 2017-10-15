@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 required_packages = [
-    'graphql-core>=1.0', 'webob', 'graphql-server-core>=1.0.dev'
+    'graphql-core>=2.0', 'webob', 'graphql-server-core>=1.0.dev'
 ]
 
 tests_require = ['pytest>=2.7.3', 'mako']
