@@ -42,14 +42,10 @@ def serve_graphql_request(request, schema, pretty=None, response_class=None, gra
             query_data=request.params,
             batch_enabled=batch_enabled,
             catch=catch,
-
             # Execute options
             **execute_options
-            # root_value=self.get_root_value(request),
-            # context_value=self.get_context(request),
-            # middleware=self.get_middleware(request),
-            # executor=self.get_executor(request),
         )
+
         result, status_code = encode_execution_results(
             execution_results,
             is_batch=isinstance(data, list),
