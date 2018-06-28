@@ -4,7 +4,7 @@ from mako.template import Template
 
 from .utils import tojson
 
-GRAPHIQL_VERSION = '0.10.2'
+GRAPHIQL_VERSION = '0.11.11'
 
 TEMPLATE = Template('''<!--
 The request to this GraphQL server provided the header "Accept: text/html"
@@ -24,11 +24,11 @@ add "&raw" to the end of the URL within a browser.
       width: 100%;
     }
   </style>
-  <link href="//cdn.jsdelivr.net/graphiql/${graphiql_version}/graphiql.css" rel="stylesheet" />
+  <link href="//cdn.jsdelivr.net/npm/graphiql@${graphiql_version}/graphiql.css" rel="stylesheet" />
   <script src="//cdn.jsdelivr.net/fetch/2.0.1/fetch.min.js"></script>
   <script src="//cdn.jsdelivr.net/react/15.5.4/react.min.js"></script>
   <script src="//cdn.jsdelivr.net/react/15.5.4/react-dom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/graphiql/${graphiql_version}/graphiql.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/graphiql@${graphiql_version}/graphiql.min.js"></script>
 </head>
 <body>
   <script>
