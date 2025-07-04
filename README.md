@@ -1,3 +1,6 @@
+> [!WARNING]  
+> WebOb-GraphQL is now deprecated in favor of [`graphql-server`](https://github.com/graphql-python/graphql-server), which has support for WebOb in a more cohesive and modern way.
+
 # WebOb-GraphQL
 
 [![Build Status](https://travis-ci.org/graphql-python/webob-graphql.svg?branch=master)](https://travis-ci.org/graphql-python/webob-graphql) [![Coverage Status](https://coveralls.io/repos/graphql-python/webob-graphql/badge.svg?branch=master&service=github)](https://coveralls.io/github/graphql-python/webob-graphql?branch=master) [![PyPI version](https://badge.fury.io/py/webob-graphql.svg)](https://badge.fury.io/py/webob-graphql)
